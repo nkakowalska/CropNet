@@ -1,0 +1,19 @@
+[project]
+authors = [{name = "Timothy Simons", email = "42070232+modiius@users.noreply.github.com"}]
+dependencies = []
+name = "CropNet"
+requires-python = ">= 3.11"
+version = "0.1.0"
+
+[build-system]
+build-backend = "hatchling.build"
+requires = ["hatchling"]
+
+[tool.pixi.workspace]
+channels = ["conda-forge"]
+platforms = ["linux-aarch64"]
+
+[tool.pixi.pypi-dependencies]
+cropnet = { path = ".", editable = true }
+
+[tool.pixi.tasks]
