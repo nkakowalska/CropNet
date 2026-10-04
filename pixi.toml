@@ -1,0 +1,26 @@
+[workspace]
+authors = ["nkakowalska <nikakowalska04@gmail.com>"]
+channels = ["conda-forge"]
+name = "CropNet"
+platforms = ["win-64"]
+version = "0.1.0"
+
+[tasks]
+
+[dependencies]
+python = "3.10.*"
+pillow = ">=12.3.0,<13"
+matplotlib = ">=3.10.9,<4"
+numpy = ">=2.2.6,<3"
+shapely = ">=2.1.2,<3"
+h5py = ">=3.16.0,<4"
+hdf5 = ">=1.14.6,<2"
+pygrib = ">=2.1.8,<3"
+pyproj = ">=3.7.1,<4"
+pandas = ">=2.3.3,<3"
+geopandas = ">=1.1.4,<2"
+proj = ">=9.6.2,<10"
+
+[pypi-dependencies]
+cropnet = "*"
+ecmwflibs = "*"
